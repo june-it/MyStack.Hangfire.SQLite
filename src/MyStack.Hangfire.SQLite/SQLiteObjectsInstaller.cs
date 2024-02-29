@@ -35,7 +35,7 @@ namespace Hangfire.SQLite
             Install(connection, null);
         }
 
-        public static void Install(DbConnection connection, string schema)
+        public static void Install(DbConnection connection, string? schema)
         {
             if (connection == null) throw new ArgumentNullException(nameof(connection));
             
